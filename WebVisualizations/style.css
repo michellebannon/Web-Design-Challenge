@@ -1,5 +1,5 @@
 body {
-    background: rgb(116, 196, 223);
+     background-color: #EDEDED;
   }
   
   .blue {
@@ -7,19 +7,19 @@ body {
   }
   
   .box{
-    padding: 10px;
+    padding: 20px;
     background: rgb(247, 239, 239);
-    margin-top:50px;
-    margin-left:5px;
-    margin-right:5px;
-    margin-bottom:20px;
+    margin-top:80px;
+    margin-left:25px;
+    margin-right:25px;
+    margin-bottom:40px;
     align-content: center;
   }
   
   .navbar {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 35px;
     background: rgb(74, 99, 126);
   }
   
@@ -34,7 +34,7 @@ body {
     font-size: 36px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   
   p{
@@ -54,13 +54,13 @@ body {
       padding: 15px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .navbar li {
-      padding: 10px;
+      padding: 20px;
     }
     .box {
-      margin-right: 22px;
-      margin-left: 22px;
+      margin-right: 32px;
+      margin-left: 32px;
     }
     .navbar ul {
       visibility: hidden;
@@ -72,7 +72,7 @@ body {
   
   .col-1 {width: 8%;}
   .col-2 {width: 17%;}
-  .col-3 {width: 24%;}
+  .col-3 {width: 20%;}
   .col-4 {width: 32%;}
   .col-5 {width: 40%;}
   .col-6 {width: 50%;}
