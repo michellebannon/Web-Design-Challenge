@@ -1,90 +1,79 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-
   <meta charset="UTF-8">
-  <title>Comparisons</title>
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href = "styles.css"> -->
+  <style>
+        body {background-color:rgb(226, 225, 225)}
+  </style>
 </head>
 
 <body>
-		<nav class="navbar navbar-default">
-				<div class="container-fluid">
-
-				  <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					  <span class="sr-only">Toggle navigation</span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="Landing.html">Latitude</a>
-				  </div>
-			  
-
-				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
-						<ul class="nav navbar-nav navbar-right">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-								<li class="dropdown"></li>
-								<li><a href="Comparisons.html">Comparisons</a></li>
-							  <li><a href="Data.html">Data</a></li>
-								<ul class="dropdown-menu">
-								  <li><a href="Max Temp.html">Max Temperature</a></li>
-								  <li><a href="Humidity.html">Humidity</a></li>
-								  <li><a href="Cloudiness.html">Cloudiness</a></li>
-								  <li role="separator" class="divider"></li>
-								  <li><a href="Wind Speed.html">Wind Speed</a></li>
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			  </nav>
-	        
-			  <div class="container">
-					<div class="row">
-					   <div class="col-md-1"></div>  
-					   <div class="col-md-6">
-							<div class="row">
-							  <div class="col-md-12">
-								<h1>Comparisons: Latitude vs. X</h1>
-								<p>Click a graph for an in depth analysis</p>
-							  </div>  
-							</div> 
-						  <div class="row">
-							<div class="col-md-3">
-							  <h3>vs. Max Temperature</h3>    
-							  <a href="Max Temp.html">Max Temperature<img src="./assets/images/Maxtemp.png" width="250" height="250"></a> 
-							</div>
-							<div class="col-md-3"></div>
-							<div class="col-md-3">
-							  <h3>vs. Humidity</h3>     
-							  <a href="Humidity.html">Humidity<img src="./assets/images/Humidity.png" width="250" height="250"></a> 
-							</div>
-							<div class="col-md-3"></div>
-						  </div>
-						  <div class="row">
-							<div class="col-md-3">
-							  <h3>vs. Cloudiness</h3>     
-							  <a href="Cloudiness.html">Cloudiness<img src="./assets/images/Cloudiness.png" width="250" height="250"></a> 
-							</div>
-							<div class="col-md-3"></div>
-							<div class="col-md-3">
-							  <h3>vs. Wind Speed</h3>     
-							  <a href="Wind Speed.html">Wind Speed<img src="./assets/images/Windspeed.png" width="250" height="250"></a> 
-							</div>
-							<div class="col-md-3"></div>
-						  </div>
-						</div>
-					</div>    
-				  </body> 
-				  <html>
-<footer>
-    <div class="footer">Copyright &copy; Michelle Bannon</div>
-  </footer>
-
+  <nav class="navbar navbar-expand-lg navbar-light p-0 bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-info p-2 rounded" href="../index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../WebVisualizations/Max_Temp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="../WebVisualizations/Humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="../WebVisualizations/Cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="../WebVisualizations/Wind_Speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../WebVisualizations/Comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../WebVisualizations/Data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        <!-- Container 1 -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 bg-white">
+                    <h1 class="text-info">Visualizations</h1>
+                    <hr>
+                    <div class="row">
+                        <div class= "col-md-6 col-sm-3">
+                          <a href="../WebVisualizations/Max_Temp.html">
+                            <img class="w-100" id ="pic1" src="../WebVisualizations/assets/images/Fig1.png" alt="maxtemp"> 
+                          </a>
+                        </div> 
+                        <div class= "col-md-6 col-sm-3">
+                          <a href="../WebVisualizations/Humidity.html">
+                            <img class="w-100" id ="pic2" src="../WebVisualizations/assets/images/Fig2.png" alt="humidity">
+                          </a>
+                          </div> 
+                          <div class= "col-md-6 col-sm-3">
+                            <a href="../WebVisualizations/Cloudiness.html">
+                              <img class="w-100" id = "pic3" src="../WebVisualizations/assets/images/Fig3.png" alt="cloudiness">
+                            </a>
+                        </div> 
+                        <div class= "col-md-6 col-sm-3">
+                            <a href="../WebVisualizations/Wind_Speed.html">
+                              <img class="w-100" id = "pic4" src="../WebVisualizations/assets/images/Fig4.png" alt="windspeed">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+       </html>
 
 
